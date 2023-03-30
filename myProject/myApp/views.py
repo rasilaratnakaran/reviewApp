@@ -1,10 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 def home(request):
-    return HttpResponse('<h1> Welcome to Electro World- Home</h1>')
+    return render(request, 'myApp/home.html')
 def about(request):
-    return HttpResponse('<h1> Welcome to Electro World- About Us</h1>')
+    return render(request, 'myApp/about.html')
 def contact(request):
-    return HttpResponse('<h1> Welcome to Electro World- Contact Us</h1>')
+    return render(request, 'myApp/contact.html')
+
 
 # Create your views here.
