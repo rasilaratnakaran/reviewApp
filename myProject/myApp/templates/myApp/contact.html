@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <!-- Created By CodingLab - www.codinglabweb.com -->
 <html lang="en" dir="ltr">
-  <head>
+  <head >
     <meta charset="UTF-8">
    <!-- <title> Responsive Contact Us Form  | CodingLab </title>-->
     <link rel="stylesheet" href="style.css">
     <!-- Fontawesome CDN Link -->
+    <link rel="preconnect" href="//https://static.photocdn.pt/images/articles/2018/12/03/articles/2017_8/improve_landscape_photography-1.webp/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
   <div class="container">
-    <div class="content">
-      <div class="left-side">
-        <div class="address details">
-          <i class="fas fa-map-marker-alt"></i>
-          <div class="topic">Address</div>
-          <div class="text-one">Surkhet, NP12</div>
-          <div class="text-two">Birendranagar 06</div>
+    <div class="contact-section">
+      <h2 class="ct-section-head">CONTACT US</h2>
+      <div class="row contact-fields">
+        <div class="col-md-8 left-form">
+         <form method="post" action="">
+          <div class="form-group">
+            <label class="sr-only" for="fname">First Name *</label>
+            <input class="required form-control" id="fname" name="fname" placeholder="First Name&nbsp;*" type="text"  required>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="lname">Last Name *</label>
+            <input class="required form-control" id="lname" name="lname" placeholder="Last Name&nbsp;*" type="text"  required>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="contactEmail">Email *</label>
+            <input class="required form-control h5-email" id="contactEmail" name="contactEmail" placeholder="Email&nbsp;*" type="text"  required>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="contactPhone">Phone *</label>
+            <input class="required form-control h5-phone" id="contactPhone" name="contactPhone" placeholder="Phone&nbsp;*" type="text"  required>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="comment">Type your message here</label>
+            <textarea class="required form-control" id="comment" name="comment" placeholder="Type your message here&nbsp;*" rows="6" required></textarea>
+          </div>
+          <button class="btn btn-accent" type="submit">Submit</button>  
+        </form>
+      </div>
+      <div class="col-md-4 contact-info">
+        <div class="phone">
+          <h2>Call</h2>
+          <a href="tel:+5555555555">555.555.5555</a>
         </div>
-        <div class="phone details">
-          <i class="fas fa-phone-alt"></i>
-          <div class="topic">Phone</div>
-          <div class="text-one">+0098 9893 5647</div>
-          <div class="text-two">+0096 3434 5678</div>
+        <div class="email">
+          <h2>Email</h2>
+          <a href="mailto:info@webcorpco.com">info@webcorpco.com</a>
         </div>
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one">codinglab@gmail.com</div>
-          <div class="text-two">info.codinglab@gmail.com</div>
+        <div class="location">
+          <h2>Visit</h2>
+          <p>One Town Center </br>
+          123 Easy Street </br>
+          Suite 1000 </br>
+          Orlando, FL 32803
+          <br></p>
+          <a class="btn btn-accent" href="" target="_blank"><img src="https://www.solodev.com/assets/contact-us-page/map-marker.png" alt="Map Marker">Google Maps</a></p>
         </div>
       </div>
-      <div class="right-side">
-        <div class="topic-text">Send us a message</div>
-        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Enter your name">
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Enter your email">
-        </div>
-        <div class="input-box message-box">
-          
-        </div>
-        <div class="button">
-          <input type="button" value="Send Now" >
-        </div>
-      </form>
-    </div>
     </div>
   </div>
 </body>
