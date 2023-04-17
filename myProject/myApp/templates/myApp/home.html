@@ -1,9 +1,123 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
-<title>Electro World- Home</title>
-</head>
-<body>
-<h1>Welcome to Electro World</h1>
+<title>Gadget Aura</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+<style type=text/css> 
+body   
+{  
+height: 125vh;  
+margin-top: 0; 
+margin-left: 0; 
+padding: 30px;  
+background-size: cover;  
+font-family: Arial;  
+} 
+header {  
+background-color: red;  
+position: fixed;  
+left: 0;  
+right: 0;  
+top: 5px;  
+height: 30px;  
+display: flex;  
+align-items: center;  
+box-shadow: 0 0 25px 0 black;
+}  
+header * {  
+display: inline;  
+}  
+header li {  
+margin: 20px;  
+}  
+header li a {  
+color: white;  
+text-decoration: none;  
+} 
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  border: none;
+  outline: none;
+  position: left;
+  background-color: red;
+  min-width: 50px;
+  font-family: Arial;
+  font-size:16px
+  }
+  .dropdown-content {
+  display: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  background-color: red;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;}
+.topnav-right {
+  float: right;
+  color: red;
+  padding-left:10px;
+  }
+  
+footer {
+  text-align: center;
+  padding: 0px;
+  background-color: red;
+  color: white;
+} 
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2021/07/15/20/52/gadgets-6469387_960_720.jpg");
+}
+</style>
+</Head>  
+<header> 
+  <nav> <div>
+  <li>  
+    <a href=" "><i class="fa fa-home"></i><b> Home</b> </a>   
+  </li>  
+  <li>  
+    <a href="/about/"><i class="fa fa-fw fa-user"></i><b> About</b> </a>  
+  </li>  
+  <li>  
+    <a href="/contact/"><i class="fa fa-fw fa-envelope"></i><b> Contact</b></a>  
+  </li> 
+  <li> 
+    <div class="dropdown">
+      <button class="dropbtn">
+      <a href="#"> <i class="fa fa-product-hunt"></i><b> Product</b></a></button>
+  </li> </div>
+ </div> </nav>
+ <nav>
+  <li>
+    <div style= "margin-right: 500px"> <a href="#"><b><i class='  fa fa-shopping-cart' ></i></b></a></div>
+  </li>
+  <li>
+    <a href="#"><b><i class=' fa fa-fw fa-user'></i></b></a>
+  </li>
+  
+</nav>
+</header>
+<div style="padding-left:16px">
+<h1 style="color:red;"> Gadget Aura </br>
+    {% load static %}  <img src="{% static "myApp/image/ab.jpg" %}"  height="50" width="50"/>
+  
+<div style= "padding-right: 50px"><input type="text" placeholder="Search Product..">
+    
+    <button type="submit"><i class="fa fa-search"></i></button> </h1></div></div>
+    
+    {% load static %}  <img src="{% static "myApp/image/aaa.jpg" %}" alt="Gaadget Aura" height="900" width="1150"/>
+<footer>
+    <p> © 2023 Gadget Aura. All rights reserved.</p>
+  
+    <p style="font-family:'Chiller'"> For Service-Related Enquiries Contact:service@gadgetaura.com</p>
+  </footer>
 </body>
+
 </html>
+
