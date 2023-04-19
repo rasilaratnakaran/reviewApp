@@ -8,4 +8,5 @@ def contact(request):
     return render(request, 'myApp/contact.html')
 
 
+
 # Create your views here.

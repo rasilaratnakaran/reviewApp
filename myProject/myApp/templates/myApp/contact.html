@@ -39,6 +39,14 @@
           </div>
           <button class="btn btn-accent" type="submit">Submit</button>  
         </form>
+        <div><form name="register" method="post" action="insertuser"></form>
+        {% csrf_token%}
+        <pre>
+            <input type = "text" name="tid" value="" width="200"><br>
+            <input type = "text" name="tname" value="" width="200"><br>
+            <input type = "submit" name="reg" value="click" width="200" height="100"><br>
+        </pre>
+        </form>
       </div>
       <div class="col-md-4 contact-info">
         <div class="phone">
