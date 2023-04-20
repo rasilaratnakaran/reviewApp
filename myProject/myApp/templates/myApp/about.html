@@ -2,6 +2,236 @@
 <!---Coding By CoderGirl!--->
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style type=text/css>  
+  body
+
+{
+
+height: 125vh;
+
+margin-top: 0;
+
+margin-left: 0;
+
+padding: 30px;
+
+background-size: cover;
+
+font-family: Arial;
+
+}
+
+header {
+
+background-color: red;
+
+position: fixed;
+
+left: 0;
+
+right: 0;
+
+top: 5px;
+
+height: 30px;
+
+display: flex;
+
+align-items: center;
+
+box-shadow: 0 0 25px 0 black;
+
+}
+
+header * {
+
+display: inline;
+
+}
+
+header li {
+
+margin: 20px;
+
+}
+
+header li a {
+
+color: white;
+
+text-decoration: none;
+
+}
+
+.dropdown {
+
+float: right;
+
+overflow: hidden;
+
+}
+
+.dropdown .dropbtn{
+
+border: none;
+
+outline: none;
+
+position: left;
+
+background-color: red;
+
+min-width: 50px;
+
+font-family: Arial;
+
+font-size:16px
+
+}
+
+.dropdown-content {
+
+display: none;
+
+border: none;
+
+outline: none;
+
+position: absolute;
+
+background-color: red;
+
+min-width: 160px;
+
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+z-index: 1;}
+
+.topnav-right {
+
+float: right;
+
+color: red;
+
+padding-left:10px;
+
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+
+background-color: red;
+
+}
+
+.dropdown-content a {
+
+float: none;
+
+color: black;
+
+padding: 12px 16px;
+
+text-decoration: none;
+
+display: block;
+
+text-align: left;
+
+}
+
+.dropdown-content a:hover {
+
+background-color: #ddd;
+
+}
+
+.dropdown:hover .dropdown-content {
+
+display: block;
+
+}
+
+* {
+
+box-sizing: border-box;
+
+}
+
+form.example input[type=text] {
+
+padding: 10px;
+
+font-size: 17px;
+
+border: 1px solid grey;
+
+float: left;
+
+width: 80%;
+
+background: #f1f1f1;
+
+}
+
+form.example button {
+
+float: left;
+
+width: 20%;
+
+padding: 10px;
+
+background: red;
+
+color: white;
+
+font-size: 17px;
+
+border: 1px solid grey;
+
+border-left: none;
+
+cursor: pointer;
+
+}
+
+form.example button:hover {
+
+background: red;
+
+}
+
+form.example::after {
+
+content: "";
+
+clear: both;
+
+display: table;
+
+}
+
+footer {
+
+text-align: center;
+
+padding: 0px;
+
+background-color: red;
+
+color: white;
+
+}
+
+body{
+
+background-image: url("https://cdn.pixabay.com/photo/2021/07/15/20/52/gadgets-6469387_960_720.jpg");
+
+}
+
+    </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,26 +239,141 @@
   <!---Custom Css File!--->
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <section class="about-us">
-    <div class="about">
-      <!--<img src="girl.png" class="pic">-->
-      <div class="text">
-        <h2>About Us</h2>
-        <h5>The advent & <span>impact of technology for our common man</span></h5>
-          <p>From a purely technological point of view, we tend to think of mobile phones in terms of applications, processors, cameras etc. However, when we look at the society at large, the impact of mobile phones in the lives of the citizen of our country has been nothing short of phenomenal. Consequently, we at myG have played a singular role in transforming the lives of over 60 lakh individuals profoundly, for the better.</p>
-          <h5>Innovative way to be connected</h5>
-          <p>We were right there when mobile phones were just beginning to sweep through our society, connecting just about everyone. We began our journey of creating superb mobile phone stores in 2006 as 3G Mobile World. We soon become recognized for our hard work, expertise and the finest range of products. We brought hi-tech devices ranging from the latest mobile phones, tablets, laptops, desktops, cameras, smart watches, land phones and all other electronic – entertainment system and accessories under one roof. At that time, such concept stores were a novelty and we are recognized as a pioneer in this segment in South India.</p>
-          <h5>Building the Chain</h5>
-          <p>What began as a single store soon grew to a series of stores as we found customers across the State increasingly loving our concept stores! As we rebranded to become myG, we had already become a leading mobile phone and electronics store chain with 100 showrooms across Kerala. The transformative power has been our innate ability to understand technology and connect it with the lives of people. Our superior service and emphasis on giving the customer the best choice at the right price have proven to be our success mantra. We know our products very well and we know our customers even better. We know what makes them tick, what tickles their fancy and drives their desires.</p>
-          <h5>The journey ahead</h5>
-          <p>Over the years, mobile phones became smaller, thinner, lighter, more powerful and unbelievably ‘smart’. Their glasses have become virtually unbreakable. Dust and water don’t affect them. Their cameras became increasingly sophisticated and their memory as well as processing power became exceptionally fast. With more computing power in our hands that massive computers of a generation ago, we can now conduct business, send emails, communicate and be entertained in countless ways. Innovative applications enable us to do tasks that were unimaginable just a few years ago. Henceforth, mobile technologies will become all that and much more, relying on artificial intelligence and nano-technologies to become even more ubiquitous part of our lives. myG will ever be part of the amazing journey into the future.</p>
+<Body bgcolor="lightyellow" >   
+  <header>
 
+    <nav> <div>
+    
+    <li>
+    
+    <a href=" "><i class="fa fa-home"></i><b> Home</b> </a>
+    
+    </li>
+    
+    <li>
+    
+    <a href="/about/"><i class="fa fa-fw fa-user"></i><b> About</b> </a>
+    
+    </li>
+    
+    <li>
+    
+    <a href="/contact/"><i class="fa fa-fw fa-envelope"></i><b> Contact</b></a>
+    
+    </li>
+    
+    <li>
+    
+    <div class="dropdown">
+    
+    <button class="dropbtn">
+    
+    <a><i class="fa fa-product-hunt"></i><b> Product</b></a></button>
+    
+    <div class="dropdown-content">
+    
+    <a href="#">Smart Phone</a>
+    
+    <a href="#">Smart Watch</a>
+    
+    <a href="#">Lap Top</a>
+    
+    </div>
+    
+    </div>
+    
+    </li>
+    
+    </div> </nav>
+    
+    
+    
+    </header>
+
+<body>
+<style>
+  body {  
+background-image: url("https://cdn.pixabay.com/photo/2021/07/15/20/52/gadgets-6469387_960_720.jpg");  
+margin-left:100px;  
+}  
+
+.about-us{
+  height: 100vh;
+  width: 100%;
+  
+}
+.pic{
+  height: auto;
+  width:  302px;
+}
+.about{
+  width: 1000px;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 1000px;
+}
+.text h2{
+  font-size: 40px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color:black
+
+}
+.text h5{
+  font-size: 30px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin-bottom: 0px;
+  color:black
+
+}
+span{
+  color: #020202;
+}
+.text p{
+  font-size: 18px;
+  font-style: italic;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color:rgb(253, 251, 251)
+
+
+}
+.data{
+  margin-top: 30px;
+}
+
+</style>
+
+<section class="about-us">
+    <div class="about">
+    
+      <div class="text"></class>
+        <h2>About Us</h2>
+        <p>Gadget aura is an online platform that allows users to purchase gadgets from varieties of products. It is your one-stop store where you can buy your favourite brands of electronics and avail the best customer services.Gadget aura is a global marketplace for making electronic purchases. We deal with all electronic brands while offering a wide range of options to the customers.</p>
+          <h5>Secure and quick shopping platform</h5>
+          <p> We use best-in-class technology in order to securely protect the customers every single detail and make the product deliveries in the safest and quickest mode while protecting the user's transactions.</p>
+          <h5>Gadget Aura has everything you wish to have</h5>
+          <p>We have a large section of wide varieties of electronic devices from worldwide brands. You have a particular choice, good enough. Otherwise, we offer a wide choice for you to choose the best suitable electronics.</p>
           <div class="data">
-        <a href="#" class="hire">Hire Me</a>
+        <footer>
+          <p> © 2023 Gadget Aura. All rights reserved.</p>
+        
+          <p style="font-family:'Chiller'"> For Service-Related Enquiries Contact:service@gadgetaura.com</p>
+        </footer>
         </div>
       </div>
     </div>
   </section>
+  
 </body>
 </html>
